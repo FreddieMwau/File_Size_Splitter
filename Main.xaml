@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:Annotation.AnnotationText="UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9" sap:VirtualizedContainerService.HintSize="1488,4587" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:upap="clr-namespace:UiPath.PDF.Activities.PDF;assembly=UiPath.PDF.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:Annotation.AnnotationText="UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9" sap:VirtualizedContainerService.HintSize="1488,1630" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:upap="clr-namespace:UiPath.PDF.Activities.PDF;assembly=UiPath.PDF.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -100,7 +100,7 @@
       <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="File Size Splitter" sap:VirtualizedContainerService.HintSize="1136,4522" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="File Size Splitter" sap:VirtualizedContainerService.HintSize="637,1565" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="str_DestinationFolder" />
       <Variable x:TypeArguments="x:String" Name="str_FileType" />
@@ -140,7 +140,7 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="1074,187" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="575,187" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
       <ui:MultipleAssign.AssignOperations>
         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -162,7 +162,7 @@
         </scg:List>
       </ui:MultipleAssign.AssignOperations>
     </ui:MultipleAssign>
-    <ui:ForEachFileX DisplayName="For Each File in Folder" Filter="[str_FileType]" Folder="[str_DestinationFolder]" sap:VirtualizedContainerService.HintSize="1074,4247" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
+    <ui:ForEachFileX DisplayName="For Each File in Folder" Filter="[str_FileType]" Folder="[str_DestinationFolder]" sap:VirtualizedContainerService.HintSize="575,1290" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
       <ui:ForEachFileX.Body>
         <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
           <ActivityAction.Argument1>
@@ -171,15 +171,15 @@
           <ActivityAction.Argument2>
             <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
           </ActivityAction.Argument2>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1040,3966" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="541,1009" sap2010:WorkflowViewState.IdRef="Sequence_5">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:GetFileInfoX DisplayName="Get File Info" FilePath="[CurrentFile.ToString]" sap:VirtualizedContainerService.HintSize="978,173" sap2010:WorkflowViewState.IdRef="GetFileInfoX_2" Output="[str_File_Details]" />
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="978,181" sap2010:WorkflowViewState.IdRef="LogMessage_5" Message="[str_File_Details.SizeInKB]" />
-            <Assign DisplayName="Convert the file size to MB" sap:VirtualizedContainerService.HintSize="978,122" sap2010:WorkflowViewState.IdRef="Assign_2">
+            <ui:GetFileInfoX DisplayName="Get File Info" FilePath="[CurrentFile.ToString]" sap:VirtualizedContainerService.HintSize="479,173" sap2010:WorkflowViewState.IdRef="GetFileInfoX_2" Output="[str_File_Details]" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="479,181" sap2010:WorkflowViewState.IdRef="LogMessage_5" Message="[str_File_Details.SizeInKB]" />
+            <Assign DisplayName="Convert the file size to MB" sap:VirtualizedContainerService.HintSize="479,122" sap2010:WorkflowViewState.IdRef="Assign_2">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:Double">[double_FileSize]</OutArgument>
               </Assign.To>
@@ -187,15 +187,21 @@
                 <InArgument x:TypeArguments="x:Double">[Convert.ToDouble(str_File_Details.SizeInKB)]</InArgument>
               </Assign.Value>
             </Assign>
-            <If Condition="[double_FileSize &gt; double_FileSizeLimit]" DisplayName="Checks if File Size &gt; File Size Limit" sap:VirtualizedContainerService.HintSize="978,3405" sap2010:WorkflowViewState.IdRef="If_3">
+            <If Condition="[double_FileSize &gt; double_FileSizeLimit]" DisplayName="Checks if File Size &gt; File Size Limit" sap:VirtualizedContainerService.HintSize="479,92" sap2010:WorkflowViewState.IdRef="If_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
               <If.Then>
-                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="944,3144" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,463" sap2010:WorkflowViewState.IdRef="Sequence_8">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Assign DisplayName="Assign - int_NumberOfSplits" sap:VirtualizedContainerService.HintSize="882,122" sap2010:WorkflowViewState.IdRef="Assign_3">
+                  <Assign DisplayName="Assign - int_NumberOfSplits" sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="Assign_3">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:Int32">[int_NumberOfSplits]</OutArgument>
                     </Assign.To>
@@ -203,20 +209,21 @@
                       <InArgument x:TypeArguments="x:Int32">[CInt(Math.Ceiling(double_FileSize / double_FileSizeLimit))]</InArgument>
                     </Assign.Value>
                   </Assign>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="882,181" sap2010:WorkflowViewState.IdRef="LogMessage_4" Message="[int_NumberOfSplits.ToString]" />
-                  <ui:IfElseIf DisplayName="Split the files exceeding the file limit" sap:VirtualizedContainerService.HintSize="882,2756" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,181" sap2010:WorkflowViewState.IdRef="LogMessage_4" Message="[int_NumberOfSplits.ToString]" />
+                  <ui:IfElseIf DisplayName="Split the files exceeding the file limit" sap:VirtualizedContainerService.HintSize="434,75" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
                     <ui:IfElseIf.ConditionBlocks>
                       <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                         <ui:IfElseIfBlock BlockType="If" Condition="[str_FileType.ToLower.Contains(&quot;pdf&quot;)]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_1">
                           <ui:IfElseIfBlock.Then>
-                            <Sequence DisplayName="Handle PDF files" sap:VirtualizedContainerService.HintSize="637,2085" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                            <Sequence DisplayName="Handle PDF files" sap:VirtualizedContainerService.HintSize="608,1666" sap2010:WorkflowViewState.IdRef="Sequence_2">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <upap:GetPDFPageCount DisplayName="Get PDF Page Count" FileName="[CurrentFile.ToString]" sap:VirtualizedContainerService.HintSize="575,122" sap2010:WorkflowViewState.IdRef="GetPDFPageCount_1" PageCount="[int_TotalPageCount]" />
-                              <ui:MultipleAssign DisplayName="Assign - int_NumberOfPagesPerSplit" sap:VirtualizedContainerService.HintSize="575,187" sap2010:WorkflowViewState.IdRef="MultipleAssign_4">
+                              <upap:GetPDFPageCount DisplayName="Get PDF Page Count" FileName="[CurrentFile.ToString]" sap:VirtualizedContainerService.HintSize="546,122" sap2010:WorkflowViewState.IdRef="GetPDFPageCount_1" PageCount="[int_TotalPageCount]" />
+                              <ui:MultipleAssign DisplayName="Assign - int_NumberOfPagesPerSplit" sap:VirtualizedContainerService.HintSize="546,187" sap2010:WorkflowViewState.IdRef="MultipleAssign_4">
                                 <ui:MultipleAssign.AssignOperations>
                                   <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                                     <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_9">
@@ -238,11 +245,11 @@
                                   </scg:List>
                                 </ui:MultipleAssign.AssignOperations>
                               </ui:MultipleAssign>
-                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="575,181" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="[UiPath.Core.Activities.LogLevel.Warn]" Message="[&quot;Remainder pages are ===&gt;&quot; + int_RemainderPages.ToString]" />
-                              <If Condition="[int_RemainderPages &gt; 0]" sap:VirtualizedContainerService.HintSize="575,511" sap2010:WorkflowViewState.IdRef="If_6">
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="546,181" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="[UiPath.Core.Activities.LogLevel.Warn]" Message="[&quot;Remainder pages are ===&gt;&quot; + int_RemainderPages.ToString]" />
+                              <If Condition="[int_RemainderPages &gt; 0]" sap:VirtualizedContainerService.HintSize="546,92" sap2010:WorkflowViewState.IdRef="If_6">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
@@ -288,7 +295,7 @@
                                   </Sequence>
                                 </If.Else>
                               </If>
-                              <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[int_CurrentPage &lt;= int_TotalPageCount]" DisplayName="While" sap:VirtualizedContainerService.HintSize="575,999" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+                              <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[int_CurrentPage &lt;= int_TotalPageCount]" DisplayName="While" sap:VirtualizedContainerService.HintSize="546,999" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
                                 <ui:InterruptibleWhile.Body>
                                   <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="512,862" sap2010:WorkflowViewState.IdRef="Sequence_10">
                                     <sap:WorkflowViewStateService.ViewState>
@@ -384,7 +391,7 @@
                                         </Sequence>
                                       </If.Else>
                                     </If>
-                                    <If Condition="[int_RemainderPages&gt; 0 AND int_CurrentPage &gt;= int_TotalPageCount]" sap:VirtualizedContainerService.HintSize="450,685" sap2010:WorkflowViewState.IdRef="If_9">
+                                    <If Condition="[int_RemainderPages&gt; 0 AND int_CurrentPage &gt;= int_TotalPageCount]" sap:VirtualizedContainerService.HintSize="450,685" sap2010:WorkflowViewState.IdRef="If_11">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -392,18 +399,18 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                       <If.Then>
-                                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,424" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,424" sap2010:WorkflowViewState.IdRef="Sequence_25">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,181" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="[UiPath.Core.Activities.LogLevel.Warn]" Message="[(int_StartPage).ToString + &quot;-&quot; + (int_CurrentPage).ToString]" />
-                                          <upap:ExtractPDFPageRange DisplayName="Extract PDF Page Range" FileName="[CurrentFile.ToString]" sap:VirtualizedContainerService.HintSize="354,158" sap2010:WorkflowViewState.IdRef="ExtractPDFPageRange_6" OutputFileName="[str_Output_Folder + &quot;\&quot; + Path.GetFileNameWithoutExtension(CurrentFile.ToString) + &quot;-  &quot; + int_SplitIndex.ToString + &quot;.pdf&quot;]" Range="[(int_StartPage).ToString + &quot;-&quot; + (int_CurrentPage).ToString]" />
+                                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,181" sap2010:WorkflowViewState.IdRef="LogMessage_13" Level="[UiPath.Core.Activities.LogLevel.Warn]" Message="[(int_StartPage).ToString + &quot;-&quot; + (int_CurrentPage).ToString]" />
+                                          <upap:ExtractPDFPageRange DisplayName="Extract PDF Page Range" FileName="[CurrentFile.ToString]" sap:VirtualizedContainerService.HintSize="354,158" sap2010:WorkflowViewState.IdRef="ExtractPDFPageRange_8" OutputFileName="[str_Output_Folder + &quot;\&quot; + Path.GetFileNameWithoutExtension(CurrentFile.ToString) + &quot;-  &quot; + int_SplitIndex.ToString + &quot;.pdf&quot;]" Range="[(int_StartPage).ToString + &quot;-&quot; + (int_CurrentPage).ToString]" />
                                         </Sequence>
                                       </If.Then>
                                       <If.Else>
-                                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,100" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,100" sap2010:WorkflowViewState.IdRef="Sequence_26">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -450,7 +457,7 @@
                     </ui:IfElseIf.ConditionBlocks>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
@@ -462,11 +469,82 @@
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </Sequence>
               </If.Else>
             </If>
+            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,356" sap2010:WorkflowViewState.IdRef="MultipleAssign_6">
+              <ui:MultipleAssign.AssignOperations>
+                <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_13">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:Int32">[int_CurrentPage]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:Int32">1</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_14">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:Int32">[int_CurrentSplitPage]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:Int32">1</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_15">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:Int32">[int_NumberOfPagesPerSplit]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:Int32">0</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_16">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:Int32">[int_NumberOfSplits]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:Int32">0</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_17">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:Int32">[int_SplitIndex]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:Int32">1</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_18">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:Int32">[int_StartPage]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:Int32">1</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_19">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:Int32">[int_TotalPageCount]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:Int32">0</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_20">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:Int32">[int_RemainderPages]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:Int32">0</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                </scg:List>
+              </ui:MultipleAssign.AssignOperations>
+            </ui:MultipleAssign>
           </Sequence>
         </ActivityAction>
       </ui:ForEachFileX.Body>
