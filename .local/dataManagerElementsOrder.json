@@ -1,0 +1,31 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "int_NumberOfPagesPerSplit&Sequence_1",
+        "str_Output_Folder&Sequence_1",
+        "int_CurrentPage&Sequence_1",
+        "int_NumberOfSplits&Sequence_1",
+        "double_FileSizeLimit&Sequence_1",
+        "double_FileSize&Sequence_1",
+        "str_File_Details&Sequence_1",
+        "int_TotalPageCount&Sequence_1",
+        "str_FileType&Sequence_1",
+        "str_DestinationFolder&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
