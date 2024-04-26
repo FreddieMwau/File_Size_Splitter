@@ -12,6 +12,10 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "int_CurrentSplitPage&Sequence_1",
+        "int_SplitIndex&Sequence_1",
+        "int_StartPage&Sequence_1",
+        "int_RemainderPages&Sequence_1",
         "int_NumberOfPagesPerSplit&Sequence_1",
         "str_Output_Folder&Sequence_1",
         "int_CurrentPage&Sequence_1",
