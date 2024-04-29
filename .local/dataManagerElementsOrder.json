@@ -12,6 +12,11 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "rowsForSplit&Sequence_1",
+        "int_TotalPageCount&Sequence_2",
+        "dt_TempTable&Sequence_1",
+        "dt_Input&Sequence_1",
+        "list_NumberOfWorkbookSheets&Sequence_1",
         "int_CurrentSplitPage&Sequence_1",
         "int_SplitIndex&Sequence_1",
         "int_StartPage&Sequence_1",
@@ -23,7 +28,6 @@
         "double_FileSizeLimit&Sequence_1",
         "double_FileSize&Sequence_1",
         "str_File_Details&Sequence_1",
-        "int_TotalPageCount&Sequence_1",
         "str_FileType&Sequence_1",
         "str_DestinationFolder&Sequence_1"
       ],
