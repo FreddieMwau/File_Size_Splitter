@@ -12,9 +12,9 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "int_TotalNumberOfRows&Sequence_3",
-        "int_RowsPerSplit&Sequence_3",
-        "int_RemainderRows&Sequence_3",
+        "int_RemainderRows&Sequence_1",
+        "int_RowsPerSplit&Sequence_1",
+        "int_TotalNumberOfRows&Sequence_1",
         "int_Counter&Sequence_1",
         "int_EndRow&Sequence_1",
         "int_StartRow&Sequence_1",

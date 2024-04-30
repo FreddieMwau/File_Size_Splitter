@@ -4,5 +4,42 @@
   "HelpLink": null,
   "Color": null,
   "OriginalIconFileName": null,
-  "Arguments": []
+  "Arguments": [
+    {
+      "Name": "in_str_DestinationFolder",
+      "DisplayName": "in_str_DestinationFolder",
+      "Category": null,
+      "Tooltip": "Should be Destination folder that will be checked",
+      "Placeholder": null,
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_str_FileType",
+      "DisplayName": "in_str_FileType",
+      "Category": null,
+      "Tooltip": "Should be the file extension type i,e *.pdf, *.xlsx, *.xls",
+      "Placeholder": null,
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_double_FileSizeLimit",
+      "DisplayName": "in_double_FileSizeLimit",
+      "Category": null,
+      "Tooltip": "Should be the set file size limit in MB",
+      "Placeholder": null,
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    }
+  ]
 }
