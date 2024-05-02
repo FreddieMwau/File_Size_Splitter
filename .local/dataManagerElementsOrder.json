@@ -30,13 +30,14 @@
         "str_Output_Folder&Sequence_1",
         "int_CurrentPage&Sequence_1",
         "int_NumberOfSplits&Sequence_1",
-        "double_FileSizeLimit&Sequence_1",
         "double_FileSize&Sequence_1",
-        "str_File_Details&Sequence_1",
-        "str_FileType&Sequence_1",
-        "str_DestinationFolder&Sequence_1"
+        "str_File_Details&Sequence_1"
       ],
-      "ArgumentsSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_double_FileSizeLimit",
+        "in_str_FileType",
+        "in_str_DestinationFolder"
+      ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     }

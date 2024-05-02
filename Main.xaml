@@ -17,7 +17,7 @@
     <x:Null />
   </VisualBasic.Settings>
   <sap2010:Annotation.AnnotationText>UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9</sap2010:Annotation.AnnotationText>
-  <sap:VirtualizedContainerService.HintSize>1480,5207</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1120,5207</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -138,7 +138,7 @@
       <x:Boolean x:Key="ShouldCollapseAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="File Size Splitter" sap:VirtualizedContainerService.HintSize="1490,5142" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="File Size Splitter" sap:VirtualizedContainerService.HintSize="1009,5142" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="si:FileInfo" Name="str_File_Details" />
       <Variable x:TypeArguments="x:Double" Name="double_FileSize" />
@@ -167,7 +167,7 @@
         <x:Boolean x:Key="IsPinned">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:ForEachFileX DisplayName="For Each File in Folder" Filter="[in_str_FileType]" Folder="[in_str_DestinationFolder]" sap:VirtualizedContainerService.HintSize="1428,5054" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
+    <ui:ForEachFileX DisplayName="For Each File in Folder" Filter="[in_str_FileType]" Folder="[in_str_DestinationFolder]" sap:VirtualizedContainerService.HintSize="947,5054" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
       <ui:ForEachFileX.Body>
         <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
           <ActivityAction.Argument1>
@@ -176,14 +176,14 @@
           <ActivityAction.Argument2>
             <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
           </ActivityAction.Argument2>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1394,4773" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="913,4773" sap2010:WorkflowViewState.IdRef="Sequence_5">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:GetFileInfoX DisplayName="Get File Info" FilePath="[CurrentFile.ToString]" sap:VirtualizedContainerService.HintSize="1332,92" sap2010:WorkflowViewState.IdRef="GetFileInfoX_2" Output="[str_File_Details]">
+            <ui:GetFileInfoX DisplayName="Get File Info" FilePath="[CurrentFile.ToString]" sap:VirtualizedContainerService.HintSize="851,92" sap2010:WorkflowViewState.IdRef="GetFileInfoX_2" Output="[str_File_Details]">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -191,7 +191,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:GetFileInfoX>
-            <ui:MultipleAssign DisplayName="Assign - double_FileSizeLimit" sap:VirtualizedContainerService.HintSize="1332,187" sap2010:WorkflowViewState.IdRef="MultipleAssign_25">
+            <ui:MultipleAssign DisplayName="Assign - double_FileSizeLimit" sap:VirtualizedContainerService.HintSize="851,187" sap2010:WorkflowViewState.IdRef="MultipleAssign_25">
               <ui:MultipleAssign.AssignOperations>
                 <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_77">
@@ -219,7 +219,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:MultipleAssign>
-            <If Condition="[double_FileSize &gt; in_double_FileSizeLimit]" DisplayName="Checks if File Size &gt; File Size Limit" sap:VirtualizedContainerService.HintSize="1332,4409" sap2010:WorkflowViewState.IdRef="If_3">
+            <If Condition="[double_FileSize &gt; in_double_FileSizeLimit]" DisplayName="Checks if File Size &gt; File Size Limit" sap:VirtualizedContainerService.HintSize="851,4409" sap2010:WorkflowViewState.IdRef="If_3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -227,14 +227,14 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <If.Then>
-                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="1298,4170" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="817,4170" sap2010:WorkflowViewState.IdRef="Sequence_8">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Assign DisplayName="Assign - int_NumberOfSplits" sap:VirtualizedContainerService.HintSize="1236,122" sap2010:WorkflowViewState.IdRef="Assign_3">
+                  <Assign DisplayName="Assign - int_NumberOfSplits" sap:VirtualizedContainerService.HintSize="755,122" sap2010:WorkflowViewState.IdRef="Assign_3">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:Int32">[int_NumberOfSplits]</OutArgument>
                     </Assign.To>
@@ -248,19 +248,19 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </Assign>
-                  <ui:IfElseIf DisplayName="Split the files exceeding the file limit" sap:VirtualizedContainerService.HintSize="1236,3963" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
+                  <ui:IfElseIf DisplayName="Split the files exceeding the file limit" sap:VirtualizedContainerService.HintSize="993,1984" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
                     <ui:IfElseIf.ConditionBlocks>
                       <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
-                        <ui:IfElseIfBlock BlockType="If" Condition="[in_str_FileType.ToLower.Contains(&quot;pdf&quot;)]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_1">
+                        <ui:IfElseIfBlock BlockType="If" Condition="[in_str_FileType.ToLower.Contains(&quot;pdf&quot;)]" DisplayName="If else if block" sap:VirtualizedContainerService.HintSize="334,25" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_1">
                           <ui:IfElseIfBlock.Then>
-                            <Sequence DisplayName="Handle PDF files" sap:VirtualizedContainerService.HintSize="541,851" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                            <Sequence DisplayName="Handle PDF files" sap:VirtualizedContainerService.HintSize="416,78" sap2010:WorkflowViewState.IdRef="Sequence_2">
                               <Sequence.Variables>
                                 <Variable x:TypeArguments="x:Int32" Name="int_TotalPageCount" />
                               </Sequence.Variables>
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                               <upap:GetPDFPageCount DisplayName="Get PDF Page Count" FileName="[CurrentFile.ToString]" sap:VirtualizedContainerService.HintSize="479,108" sap2010:WorkflowViewState.IdRef="GetPDFPageCount_1" PageCount="[int_TotalPageCount]">
@@ -271,7 +271,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </upap:GetPDFPageCount>
-                              <ui:MultipleAssign DisplayName="Assign - int_NumberOfPagesPerSplit" sap:VirtualizedContainerService.HintSize="479,187" sap2010:WorkflowViewState.IdRef="MultipleAssign_4">
+                              <ui:MultipleAssign DisplayName="Assign - int_NumberOfPagesPerSplit &amp; int_RemainderPages" sap:VirtualizedContainerService.HintSize="479,187" sap2010:WorkflowViewState.IdRef="MultipleAssign_4">
                                 <ui:MultipleAssign.AssignOperations>
                                   <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                                     <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_9">
@@ -496,7 +496,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </ui:InterruptibleWhile>
-                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="479,92" sap2010:WorkflowViewState.IdRef="LogMessage_30" Level="[UiPath.Core.Activities.LogLevel.Warn]" Message="[CurrentFile.ToString + &quot;was split to &quot; + int_SplitIndex.ToString + &quot;copies&quot;]">
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="479,92" sap2010:WorkflowViewState.IdRef="LogMessage_30" Level="[UiPath.Core.Activities.LogLevel.Warn]" Message="[CurrentFile.ToString + &quot; was split to &quot; + (int_SplitIndex - 1).ToString+ &quot; copies&quot;]">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -504,7 +504,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </ui:LogMessage>
-                              <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,92" sap2010:WorkflowViewState.IdRef="MultipleAssign_7">
+                              <ui:MultipleAssign DisplayName="Reset loop variables" sap:VirtualizedContainerService.HintSize="479,92" sap2010:WorkflowViewState.IdRef="MultipleAssign_7">
                                 <ui:MultipleAssign.AssignOperations>
                                   <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
                                     <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_21">
@@ -573,6 +573,12 @@
                                     </ui:AssignOperation>
                                   </scg:List>
                                 </ui:MultipleAssign.AssignOperations>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
                               </ui:MultipleAssign>
                               <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="479,103" sap2010:WorkflowViewState.IdRef="DeleteFileX_3" Path="[CurrentFile.ToString]">
                                 <sap:WorkflowViewStateService.ViewState>
@@ -586,11 +592,11 @@
                         </ui:IfElseIfBlock>
                         <ui:IfElseIfBlock BlockType="ElseIf" Condition="[in_str_FileType.ToLower.Contains(&quot;xlsx&quot;) OR in_str_FileType.ToLower.Contains(&quot;xls&quot;)]" DisplayName="If else if block" sap:VirtualizedContainerService.HintSize="334,25" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_2">
                           <ui:IfElseIfBlock.Then>
-                            <Sequence DisplayName="Handle Excel files (xlsx or xls)" sap:VirtualizedContainerService.HintSize="704,1169" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                            <Sequence DisplayName="Handle Excel files (xlsx or xls)" sap:VirtualizedContainerService.HintSize="416,78" sap2010:WorkflowViewState.IdRef="Sequence_3">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                               <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="642,981" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="[CurrentFile.ToString]">
@@ -620,7 +626,7 @@
                                                   <x:Boolean x:Key="IsPinned">True</x:Boolean>
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
-                                              <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="450,92" sap2010:WorkflowViewState.IdRef="MultipleAssign_17">
+                                              <ui:MultipleAssign DisplayName="Assign loop variables" sap:VirtualizedContainerService.HintSize="450,92" sap2010:WorkflowViewState.IdRef="MultipleAssign_17">
                                                 <ui:MultipleAssign.AssignOperations>
                                                   <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                                                     <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_50">
@@ -689,21 +695,21 @@
                                                   </Sequence>
                                                 </If.Then>
                                                 <If.Else>
-                                                  <Sequence DisplayName="Only 1 Workbook Sheet" sap:VirtualizedContainerService.HintSize="416,78" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                                                  <Sequence DisplayName="Only 1 Workbook Sheet" sap:VirtualizedContainerService.HintSize="942,3104" sap2010:WorkflowViewState.IdRef="Sequence_33">
                                                     <sap:WorkflowViewStateService.ViewState>
                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                       </scg:Dictionary>
                                                     </sap:WorkflowViewStateService.ViewState>
-                                                    <ui:ExcelReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dt_InitialInputDataTable]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="ExcelReadRange_2" SheetName="[currentItem.ToString]">
+                                                    <ui:ExcelReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dt_InitialInputDataTable]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="880,92" sap2010:WorkflowViewState.IdRef="ExcelReadRange_2" SheetName="[currentItem.ToString]">
                                                       <sap:WorkflowViewStateService.ViewState>
                                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                         </scg:Dictionary>
                                                       </sap:WorkflowViewStateService.ViewState>
                                                     </ui:ExcelReadRange>
-                                                    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="MultipleAssign_9">
+                                                    <ui:MultipleAssign DisplayName="Assign - int_TotalNumberOfRows, int_RowsPerSplit &amp; int_RemainderRows" sap:VirtualizedContainerService.HintSize="880,92" sap2010:WorkflowViewState.IdRef="MultipleAssign_9">
                                                       <ui:MultipleAssign.AssignOperations>
                                                         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                                                           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_32">
@@ -739,7 +745,7 @@
                                                         </scg:Dictionary>
                                                       </sap:WorkflowViewStateService.ViewState>
                                                     </ui:MultipleAssign>
-                                                    <If Condition="[int_RemainderRows &gt; 0]" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="If_31">
+                                                    <If Condition="[int_RemainderRows &gt; 0]" sap:VirtualizedContainerService.HintSize="880,92" sap2010:WorkflowViewState.IdRef="If_31">
                                                       <sap:WorkflowViewStateService.ViewState>
                                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -747,14 +753,14 @@
                                                         </scg:Dictionary>
                                                       </sap:WorkflowViewStateService.ViewState>
                                                       <If.Then>
-                                                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,78" sap2010:WorkflowViewState.IdRef="Sequence_78">
+                                                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="541,255" sap2010:WorkflowViewState.IdRef="Sequence_78">
                                                           <sap:WorkflowViewStateService.ViewState>
                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                              <x:Boolean x:Key="IsPinned">True</x:Boolean>
                                                             </scg:Dictionary>
                                                           </sap:WorkflowViewStateService.ViewState>
-                                                          <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="434,75" sap2010:WorkflowViewState.IdRef="MultipleAssign_19">
+                                                          <ui:MultipleAssign DisplayName="Assign - int_NumberOfSplits &amp; int_RowsPerSplit" sap:VirtualizedContainerService.HintSize="479,170" sap2010:WorkflowViewState.IdRef="MultipleAssign_19">
                                                             <ui:MultipleAssign.AssignOperations>
                                                               <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                                                                 <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_60">
@@ -777,7 +783,7 @@
                                                             </ui:MultipleAssign.AssignOperations>
                                                             <sap:WorkflowViewStateService.ViewState>
                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                <x:Boolean x:Key="IsPinned">True</x:Boolean>
                                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                               </scg:Dictionary>
                                                             </sap:WorkflowViewStateService.ViewState>
@@ -794,20 +800,20 @@
                                                         </Sequence>
                                                       </If.Else>
                                                     </If>
-                                                    <ui:ForEach x:TypeArguments="x:Int32" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[Enumerable.Range(1, int_NumberOfSplits)]">
+                                                    <ui:ForEach x:TypeArguments="x:Int32" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="880,2487" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[Enumerable.Range(1, int_NumberOfSplits)]">
                                                       <ui:ForEach.Body>
                                                         <ActivityAction x:TypeArguments="x:Int32">
                                                           <ActivityAction.Argument>
                                                             <DelegateInArgument x:TypeArguments="x:Int32" Name="currentItem" />
                                                           </ActivityAction.Argument>
-                                                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="541,623" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                                                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="846,2283" sap2010:WorkflowViewState.IdRef="Sequence_36">
                                                             <sap:WorkflowViewStateService.ViewState>
                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                 <x:Boolean x:Key="IsPinned">True</x:Boolean>
                                                               </scg:Dictionary>
                                                             </sap:WorkflowViewStateService.ViewState>
-                                                            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,187" sap2010:WorkflowViewState.IdRef="MultipleAssign_10">
+                                                            <ui:MultipleAssign DisplayName="Assign - int_StartRow &amp; int_EndRow" sap:VirtualizedContainerService.HintSize="784,187" sap2010:WorkflowViewState.IdRef="MultipleAssign_10">
                                                               <ui:MultipleAssign.AssignOperations>
                                                                 <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                                                                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_35">
@@ -834,14 +840,15 @@
                                                                 </scg:Dictionary>
                                                               </sap:WorkflowViewStateService.ViewState>
                                                             </ui:MultipleAssign>
-                                                            <ui:ClearDataTable DataTable="[dt_SplitDataTable]" DisplayName="Clear Data Table" sap:VirtualizedContainerService.HintSize="479,92" sap2010:WorkflowViewState.IdRef="ClearDataTable_1">
+                                                            <ui:BuildDataTable DataTable="[dt_SplitDataTable]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="784,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Column1&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Column2&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Column1&gt;text&lt;/Column1&gt;&#xD;&#xA;    &lt;Column2&gt;1&lt;/Column2&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+                                                            <ui:ClearDataTable DataTable="[dt_SplitDataTable]" DisplayName="Clear Data Table" sap:VirtualizedContainerService.HintSize="784,92" sap2010:WorkflowViewState.IdRef="ClearDataTable_1">
                                                               <sap:WorkflowViewStateService.ViewState>
                                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                                 </scg:Dictionary>
                                                               </sap:WorkflowViewStateService.ViewState>
                                                             </ui:ClearDataTable>
-                                                            <Assign sap:VirtualizedContainerService.HintSize="479,92" sap2010:WorkflowViewState.IdRef="Assign_7">
+                                                            <Assign DisplayName="Assign - dt_SplitDataTable" sap:VirtualizedContainerService.HintSize="784,122" sap2010:WorkflowViewState.IdRef="Assign_7">
                                                               <Assign.To>
                                                                 <OutArgument x:TypeArguments="sd:DataTable">[dt_SplitDataTable]</OutArgument>
                                                               </Assign.To>
@@ -850,25 +857,25 @@
                                                               </Assign.Value>
                                                               <sap:WorkflowViewStateService.ViewState>
                                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                 </scg:Dictionary>
                                                               </sap:WorkflowViewStateService.ViewState>
                                                             </Assign>
-                                                            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_InitialInputDataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="479,92" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                                                            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_InitialInputDataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="784,1705" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
                                                               <ui:ForEachRow.Body>
                                                                 <ActivityAction x:TypeArguments="sd:DataRow">
                                                                   <ActivityAction.Argument>
                                                                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                                                                   </ActivityAction.Argument>
-                                                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="705,1553" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                                                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="750,1518" sap2010:WorkflowViewState.IdRef="Sequence_37">
                                                                     <sap:WorkflowViewStateService.ViewState>
                                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                         <x:Boolean x:Key="IsPinned">True</x:Boolean>
                                                                       </scg:Dictionary>
                                                                     </sap:WorkflowViewStateService.ViewState>
-                                                                    <If Condition="[int_Counter &gt;= int_StartRow ANDAlso int_Counter &lt;= int_EndRow]" sap:VirtualizedContainerService.HintSize="643,1468" sap2010:WorkflowViewState.IdRef="If_15">
+                                                                    <If Condition="[int_Counter &gt;= int_StartRow ANDAlso int_Counter &lt;= int_EndRow]" sap:VirtualizedContainerService.HintSize="688,1433" sap2010:WorkflowViewState.IdRef="If_15">
                                                                       <sap:WorkflowViewStateService.ViewState>
                                                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                           <x:Boolean x:Key="IsPinned">True</x:Boolean>
@@ -876,33 +883,26 @@
                                                                         </scg:Dictionary>
                                                                       </sap:WorkflowViewStateService.ViewState>
                                                                       <If.Then>
-                                                                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="609,1227" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                                                                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="654,1194" sap2010:WorkflowViewState.IdRef="Sequence_38">
                                                                           <sap:WorkflowViewStateService.ViewState>
                                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                               <x:Boolean x:Key="IsPinned">True</x:Boolean>
                                                                             </scg:Dictionary>
                                                                           </sap:WorkflowViewStateService.ViewState>
-                                                                          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[CurrentRow.ItemArray]" DataTable="[dt_SplitDataTable]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="547,92" sap2010:WorkflowViewState.IdRef="AddDataRow_2">
+                                                                          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[CurrentRow.ItemArray]" DataTable="[dt_SplitDataTable]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="592,92" sap2010:WorkflowViewState.IdRef="AddDataRow_2">
                                                                             <sap:WorkflowViewStateService.ViewState>
                                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                                               </scg:Dictionary>
                                                                             </sap:WorkflowViewStateService.ViewState>
                                                                           </ui:AddDataRow>
-                                                                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="547,92" sap2010:WorkflowViewState.IdRef="LogMessage_21" Message="[&quot;Split Data Table Count ==&gt; &quot; + dt_SplitDataTable.Rows.Count.ToString]">
-                                                                            <sap:WorkflowViewStateService.ViewState>
-                                                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                                                              </scg:Dictionary>
-                                                                            </sap:WorkflowViewStateService.ViewState>
-                                                                          </ui:LogMessage>
-                                                                          <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="547,958" sap2010:WorkflowViewState.IdRef="IfElseIf_2">
+                                                                          <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="592,1017" sap2010:WorkflowViewState.IdRef="IfElseIf_2">
                                                                             <ui:IfElseIf.ConditionBlocks>
                                                                               <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                                                                                 <ui:IfElseIfBlock BlockType="If" Condition="[int_Counter &gt;= int_TotalNumberOfRows]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_4">
                                                                                   <ui:IfElseIfBlock.Then>
-                                                                                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,80" sap2010:WorkflowViewState.IdRef="Sequence_65">
+                                                                                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,78" sap2010:WorkflowViewState.IdRef="Sequence_65">
                                                                                       <sap:WorkflowViewStateService.ViewState>
                                                                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -913,31 +913,24 @@
                                                                                     </Sequence>
                                                                                   </ui:IfElseIfBlock.Then>
                                                                                 </ui:IfElseIfBlock>
-                                                                                <ui:IfElseIfBlock BlockType="ElseIf" Condition="[dt_SplitDataTable.Rows.Count = int_RowsPerSplit]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_5">
+                                                                                <ui:IfElseIfBlock BlockType="ElseIf" Condition="[int_Counter &gt;= int_StartRow AndAlso int_Counter &lt;= int_EndRow]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_5">
                                                                                   <ui:IfElseIfBlock.Then>
-                                                                                    <Sequence sap:VirtualizedContainerService.HintSize="496,533" sap2010:WorkflowViewState.IdRef="Sequence_69">
+                                                                                    <Sequence sap:VirtualizedContainerService.HintSize="541,594" sap2010:WorkflowViewState.IdRef="Sequence_69">
                                                                                       <sap:WorkflowViewStateService.ViewState>
                                                                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                                           <x:Boolean x:Key="IsPinned">True</x:Boolean>
                                                                                         </scg:Dictionary>
                                                                                       </sap:WorkflowViewStateService.ViewState>
-                                                                                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,93" sap2010:WorkflowViewState.IdRef="LogMessage_22" Message="[&quot;Rows count ===&gt; &quot; + dt_SplitDataTable.Rows.Count.ToString]">
+                                                                                      <If Condition="[in_str_FileType.ToLower.Contains(&quot;xlsx&quot;)]" sap:VirtualizedContainerService.HintSize="479,92" sap2010:WorkflowViewState.IdRef="If_27">
                                                                                         <sap:WorkflowViewStateService.ViewState>
                                                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                                                                          </scg:Dictionary>
-                                                                                        </sap:WorkflowViewStateService.ViewState>
-                                                                                      </ui:LogMessage>
-                                                                                      <If Condition="[in_str_FileType.ToLower.Contains(&quot;xlsx&quot;)]" sap:VirtualizedContainerService.HintSize="434,93" sap2010:WorkflowViewState.IdRef="If_27">
-                                                                                        <sap:WorkflowViewStateService.ViewState>
-                                                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                                                                           </scg:Dictionary>
                                                                                         </sap:WorkflowViewStateService.ViewState>
                                                                                         <If.Then>
-                                                                                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,224" sap2010:WorkflowViewState.IdRef="Sequence_67">
+                                                                                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,78" sap2010:WorkflowViewState.IdRef="Sequence_67">
                                                                                             <sap:WorkflowViewStateService.ViewState>
                                                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -972,7 +965,7 @@
                                                                                           </Sequence>
                                                                                         </If.Else>
                                                                                       </If>
-                                                                                      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="434,93" sap2010:WorkflowViewState.IdRef="MultipleAssign_18">
+                                                                                      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,249" sap2010:WorkflowViewState.IdRef="MultipleAssign_18">
                                                                                         <ui:MultipleAssign.AssignOperations>
                                                                                           <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                                                                                             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_56">
@@ -1011,18 +1004,18 @@
                                                                                         </ui:MultipleAssign.AssignOperations>
                                                                                         <sap:WorkflowViewStateService.ViewState>
                                                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
                                                                                           </scg:Dictionary>
                                                                                         </sap:WorkflowViewStateService.ViewState>
                                                                                       </ui:MultipleAssign>
-                                                                                      <ui:ClearDataTable DataTable="[dt_SplitDataTable]" DisplayName="Clear Data Table" sap:VirtualizedContainerService.HintSize="434,121" sap2010:WorkflowViewState.IdRef="ClearDataTable_4">
+                                                                                      <ui:ClearDataTable DataTable="[dt_SplitDataTable]" DisplayName="Clear Data Table" sap:VirtualizedContainerService.HintSize="479,120" sap2010:WorkflowViewState.IdRef="ClearDataTable_4">
                                                                                         <sap:WorkflowViewStateService.ViewState>
                                                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                             <x:Boolean x:Key="IsPinned">True</x:Boolean>
                                                                                           </scg:Dictionary>
                                                                                         </sap:WorkflowViewStateService.ViewState>
                                                                                       </ui:ClearDataTable>
-                                                                                      <ui:Break sap:VirtualizedContainerService.HintSize="434,48" sap2010:WorkflowViewState.IdRef="Break_3" />
+                                                                                      <ui:Break sap:VirtualizedContainerService.HintSize="479,48" sap2010:WorkflowViewState.IdRef="Break_3" />
                                                                                     </Sequence>
                                                                                   </ui:IfElseIfBlock.Then>
                                                                                 </ui:IfElseIfBlock>
@@ -1037,7 +1030,7 @@
                                                                         </Sequence>
                                                                       </If.Then>
                                                                       <If.Else>
-                                                                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,80" sap2010:WorkflowViewState.IdRef="Sequence_39">
+                                                                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,78" sap2010:WorkflowViewState.IdRef="Sequence_39">
                                                                           <sap:WorkflowViewStateService.ViewState>
                                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1065,30 +1058,30 @@
                                                               </ui:ForEachRow.Body>
                                                               <sap:WorkflowViewStateService.ViewState>
                                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                 </scg:Dictionary>
                                                               </sap:WorkflowViewStateService.ViewState>
                                                             </ui:ForEachRow>
-                                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="479,75" sap2010:WorkflowViewState.IdRef="LogMessage_29" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentFile.ToString + &quot; was split to &quot; + int_SplitIndex.ToString + &quot;copies&quot;]">
-                                                              <sap:WorkflowViewStateService.ViewState>
-                                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                                                </scg:Dictionary>
-                                                              </sap:WorkflowViewStateService.ViewState>
-                                                            </ui:LogMessage>
                                                           </Sequence>
                                                         </ActivityAction>
                                                       </ui:ForEach.Body>
                                                       <sap:WorkflowViewStateService.ViewState>
                                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                         </scg:Dictionary>
                                                       </sap:WorkflowViewStateService.ViewState>
                                                     </ui:ForEach>
-                                                    <ui:ClearDataTable DataTable="[dt_SplitDataTable]" DisplayName="Clear Data Table" sap:VirtualizedContainerService.HintSize="434,75" sap2010:WorkflowViewState.IdRef="ClearDataTable_3">
+                                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="880,181" sap2010:WorkflowViewState.IdRef="LogMessage_29" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentFile.ToString + &quot; was split to &quot; + (int_SplitIndex - 1).ToString+ &quot; copies&quot;]">
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                    </ui:LogMessage>
+                                                    <ui:ClearDataTable DataTable="[dt_SplitDataTable]" DisplayName="Clear Data Table" sap:VirtualizedContainerService.HintSize="880,75" sap2010:WorkflowViewState.IdRef="ClearDataTable_3">
                                                       <sap:WorkflowViewStateService.ViewState>
                                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -1130,14 +1123,14 @@
                         </ui:IfElseIfBlock>
                         <ui:IfElseIfBlock BlockType="ElseIf" Condition="[in_str_FileType.ToLower.Contains(&quot;csv&quot;)]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_3">
                           <ui:IfElseIfBlock.Then>
-                            <Sequence DisplayName="Handle CSV files" sap:VirtualizedContainerService.HintSize="637,1472" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                            <Sequence DisplayName="Handle CSV files" sap:VirtualizedContainerService.HintSize="592,1380" sap2010:WorkflowViewState.IdRef="Sequence_4">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   <x:Boolean x:Key="IsPinned">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ui:ReadCsvFile DataTable="[dt_InitialInputDataTable]" Delimitator="Comma" DisplayName="Read CSV" FilePath="[CurrentFile.ToString]" sap:VirtualizedContainerService.HintSize="575,92" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1">
+                              <ui:ReadCsvFile DataTable="[dt_InitialInputDataTable]" Delimitator="Comma" DisplayName="Read CSV" FilePath="[CurrentFile.ToString]" sap:VirtualizedContainerService.HintSize="530,92" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -1145,7 +1138,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </ui:ReadCsvFile>
-                              <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="575,92" sap2010:WorkflowViewState.IdRef="MultipleAssign_20">
+                              <ui:MultipleAssign DisplayName="Assign loop variables" sap:VirtualizedContainerService.HintSize="530,92" sap2010:WorkflowViewState.IdRef="MultipleAssign_20">
                                 <ui:MultipleAssign.AssignOperations>
                                   <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
                                     <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_62">
@@ -1213,7 +1206,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </ui:MultipleAssign>
-                              <If Condition="[int_RemainderRows &gt; 0]" sap:VirtualizedContainerService.HintSize="575,92" sap2010:WorkflowViewState.IdRef="If_33">
+                              <If Condition="[int_RemainderRows &gt; 0]" sap:VirtualizedContainerService.HintSize="530,92" sap2010:WorkflowViewState.IdRef="If_33">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -1268,20 +1261,20 @@
                                   </Sequence>
                                 </If.Else>
                               </If>
-                              <ui:ForEach x:TypeArguments="x:Int32" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="575,916" sap2010:WorkflowViewState.IdRef="ForEach`1_4" Values="[Enumerable.Range(1, int_NumberOfSplits)]">
+                              <ui:ForEach x:TypeArguments="x:Int32" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="530,732" sap2010:WorkflowViewState.IdRef="ForEach`1_4" Values="[Enumerable.Range(1, int_NumberOfSplits)]">
                                 <ui:ForEach.Body>
                                   <ActivityAction x:TypeArguments="x:Int32">
                                     <ActivityAction.Argument>
                                       <DelegateInArgument x:TypeArguments="x:Int32" Name="currentItem" />
                                     </ActivityAction.Argument>
-                                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="541,712" sap2010:WorkflowViewState.IdRef="Sequence_89">
+                                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,528" sap2010:WorkflowViewState.IdRef="Sequence_89">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           <x:Boolean x:Key="IsPinned">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,187" sap2010:WorkflowViewState.IdRef="MultipleAssign_22">
+                                      <ui:MultipleAssign DisplayName="Assign - int_StartRow &amp; int_EndRow" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="MultipleAssign_22">
                                         <ui:MultipleAssign.AssignOperations>
                                           <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                                             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_71">
@@ -1304,18 +1297,20 @@
                                         </ui:MultipleAssign.AssignOperations>
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                       </ui:MultipleAssign>
-                                      <ui:ClearDataTable DataTable="[dt_SplitDataTable]" DisplayName="Clear Data Table" sap:VirtualizedContainerService.HintSize="479,92" sap2010:WorkflowViewState.IdRef="ClearDataTable_6">
+                                      <ui:BuildDataTable DataTable="[dt_SplitDataTable]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Column1&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Column2&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Column1&gt;text&lt;/Column1&gt;&#xD;&#xA;    &lt;Column2&gt;1&lt;/Column2&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+                                      <ui:ClearDataTable DataTable="[dt_SplitDataTable]" DisplayName="Clear Data Table" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="ClearDataTable_6">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                       </ui:ClearDataTable>
-                                      <Assign sap:VirtualizedContainerService.HintSize="479,92" sap2010:WorkflowViewState.IdRef="Assign_12">
+                                      <Assign DisplayName="Assign - dt_SplitDataTable" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="Assign_12">
                                         <Assign.To>
                                           <OutArgument x:TypeArguments="sd:DataTable">[dt_SplitDataTable]</OutArgument>
                                         </Assign.To>
@@ -1329,20 +1324,20 @@
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                       </Assign>
-                                      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_InitialInputDataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="479,92" sap2010:WorkflowViewState.IdRef="ForEachRow_5">
+                                      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_InitialInputDataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="434,75" sap2010:WorkflowViewState.IdRef="ForEachRow_5">
                                         <ui:ForEachRow.Body>
                                           <ActivityAction x:TypeArguments="sd:DataRow">
                                             <ActivityAction.Argument>
                                               <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                                             </ActivityAction.Argument>
-                                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="750,1776" sap2010:WorkflowViewState.IdRef="Sequence_88">
+                                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="750,1684" sap2010:WorkflowViewState.IdRef="Sequence_88">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                   <x:Boolean x:Key="IsPinned">True</x:Boolean>
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
-                                              <If Condition="[int_Counter &gt;= int_StartRow ANDAlso int_Counter &lt;= int_EndRow]" sap:VirtualizedContainerService.HintSize="688,1691" sap2010:WorkflowViewState.IdRef="If_34">
+                                              <If Condition="[int_Counter &gt;= int_StartRow ANDAlso int_Counter &lt;= int_EndRow]" sap:VirtualizedContainerService.HintSize="688,1599" sap2010:WorkflowViewState.IdRef="If_34">
                                                 <sap:WorkflowViewStateService.ViewState>
                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                     <x:Boolean x:Key="IsPinned">True</x:Boolean>
@@ -1350,7 +1345,7 @@
                                                   </scg:Dictionary>
                                                 </sap:WorkflowViewStateService.ViewState>
                                                 <If.Then>
-                                                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="654,1452" sap2010:WorkflowViewState.IdRef="Sequence_86">
+                                                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="654,1360" sap2010:WorkflowViewState.IdRef="Sequence_86">
                                                     <sap:WorkflowViewStateService.ViewState>
                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1364,13 +1359,6 @@
                                                         </scg:Dictionary>
                                                       </sap:WorkflowViewStateService.ViewState>
                                                     </ui:AddDataRow>
-                                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="592,92" sap2010:WorkflowViewState.IdRef="LogMessage_23" Message="[&quot;Split Data Table Count ==&gt; &quot; + dt_SplitDataTable.Rows.Count.ToString]">
-                                                      <sap:WorkflowViewStateService.ViewState>
-                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                                        </scg:Dictionary>
-                                                      </sap:WorkflowViewStateService.ViewState>
-                                                    </ui:LogMessage>
                                                     <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="592,1183" sap2010:WorkflowViewState.IdRef="IfElseIf_3">
                                                       <ui:IfElseIf.ConditionBlocks>
                                                         <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
@@ -1509,14 +1497,6 @@
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                       </ui:ForEachRow>
-                                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="479,164" sap2010:WorkflowViewState.IdRef="LogMessage_28" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentFile.ToString + &quot; was split to &quot; + int_SplitIndex.ToString + &quot;copies&quot;]">
-                                        <sap:WorkflowViewStateService.ViewState>
-                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
-                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                          </scg:Dictionary>
-                                        </sap:WorkflowViewStateService.ViewState>
-                                      </ui:LogMessage>
                                     </Sequence>
                                   </ActivityAction>
                                 </ui:ForEach.Body>
@@ -1527,14 +1507,22 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </ui:ForEach>
-                              <ui:ClearDataTable DataTable="[dt_SplitDataTable]" DisplayName="Clear Data Table" sap:VirtualizedContainerService.HintSize="575,92" sap2010:WorkflowViewState.IdRef="ClearDataTable_5">
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="530,92" sap2010:WorkflowViewState.IdRef="LogMessage_28" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentFile.ToString + &quot; was split to &quot; + (int_SplitIndex - 1).ToString+ &quot; copies&quot;]">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ui:LogMessage>
+                              <ui:ClearDataTable DataTable="[dt_SplitDataTable]" DisplayName="Clear Data Table" sap:VirtualizedContainerService.HintSize="530,92" sap2010:WorkflowViewState.IdRef="ClearDataTable_5">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </ui:ClearDataTable>
-                              <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="575,103" sap2010:WorkflowViewState.IdRef="DeleteFileX_2" Path="[CurrentFile.ToString]">
+                              <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="530,103" sap2010:WorkflowViewState.IdRef="DeleteFileX_2" Path="[CurrentFile.ToString]">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsPinned">True</x:Boolean>
